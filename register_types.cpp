@@ -2,13 +2,13 @@
 
 #include "register_types.h"
 
-#include "core/class_db.h"
+#include "core/object/class_db.h"
 #include "qrcodetexture.h"
 
-void register_qrcodetexture_types() {
-	ClassDB::register_class<QRCodeTexture>();
+void register_qrcode_types() {
+	ClassDB::register_class<QRCodeTexture2D>();
 }
 
-void unregister_qrcodetexture_types() {
+void unregister_qrcode_types() {
 	// Nothing to do here in this example.
 }

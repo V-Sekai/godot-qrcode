@@ -3,12 +3,14 @@
 #ifndef QRCODETEXTURE_H
 #define QRCODETEXTURE_H
 
-#include "scene/resources/texture.h"
 #include "qrcodegen.hpp"
+
+#include "scene/resources/texture.h"
+
 using qrcodegen::QrCode;
 
-class QRCodeTexture : public ImageTexture {
-	GDCLASS(QRCodeTexture, ImageTexture);
+class QRCodeTexture2D : public ImageTexture {
+	GDCLASS(QRCodeTexture2D, ImageTexture);
 
 protected:
 	static void _bind_methods();
@@ -16,6 +18,7 @@ protected:
 	int border = 1;
 	Color color = Color(0, 0, 0);
 	void update_qrcode();
+	Vector2i size;
 
 public:
 
@@ -30,7 +33,8 @@ public:
 	int get_border() const;
 	void set_ecl(const int &p_ecl);
 	int get_ecl() const;
-	QRCodeTexture();
+
+	QRCodeTexture2D();
 };
 
 #endif // QRCODETEXTURE_H
