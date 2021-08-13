@@ -6,7 +6,7 @@ QRCodeTexture2D module for GodotEngine 4.x
 Introduction
 ------------
 
-A new texture type is added to GodotEngine by this module : QRCodeTexture2D.
+A new texture type is added to GodotEngine by this module: QRCodeTexture2D.
 
 This new texture is a QR Code generated from a given content String.
 
@@ -15,8 +15,8 @@ This module uses [Nayuki's QR Code generator library](https://www.nayuki.io/page
 Features
 --------
 
-* Generate a QR Code image texture from a string content (can be an url)
-* Customizable color (be careful with contrast to keep high readability for scanners)
+* Generate a QR Code image texture from a string content (can be an URL)
+* Customizable colour (be careful with contrast to keep high readability for scanners)
 * 4 error correction levels (QR Code Model 2 standard)
 * Customizable border thickness
 
@@ -25,17 +25,17 @@ https://user-images.githubusercontent.com/3649998/129322688-2f935abb-aa07-446d-8
 Installation
 ------------
 
-As this project is an addon module for GodotEngine, your need to [recompile the engine from sources](https://docs.godotengine.org/en/stable/development/compiling/index.html) to use it.
+This project is an addon module for GodotEngine. [Recompile recompile the engine from sources](https://docs.godotengine.org/en/stable/development/compiling/index.html) to use it.
 
-* Clone this repository in your Godot sources **modules** folder or create a **qrcode** folder in your **modules** folder and copy the files manually.
+* Clone this repository in the Godot sources **modules** folder or create a **qrcode** folder in the **modules** folder and copy the files manually.
 * Recompile the engine
 
 Usage
 -----
 
-QRCodeTexture can be used as any other textures in the engine.
+QRCodeTexture can be used as any other texture in the engine.
 
-Most common usage : Display a QRCode in a UI using a TextureRect node.
+Most common usage: Display a QRCode in a UI using a TextureRect node.
 
 * Create a TextureRect node.
 * From the inspector, check the **Expand** checkbox and select **Keep Aspect** for **Stretch Mode** to prevent deformation when resizing the QR Code.
@@ -43,14 +43,14 @@ Most common usage : Display a QRCode in a UI using a TextureRect node.
 
 ![image](https://user-images.githubusercontent.com/3649998/129286912-ba39c662-4258-4982-a334-beebfb0aecf5.png)
 
-* The default content is empty. Generated QR Code contain no data.
-* Add your content (text, url...) in the **content** textarea.
+* The default content is empty. Generated QR Codes contain no data.
+* Add content (text, URL...) in the **content** text area.
 
 Optional :
 
-* Customize the **Color**. Default is black. Keep a high contrast level for scanner readability.
+* Customize the **colour**. Default is black. Keep a high contrast level for scanner readability.
 * Customize **Border** thickness (default is 1 square).
-* Choose **Error Correction Level**. QR Code contains redondant data allowing scanners to read the QR Code even if a part is missing or dirty.
+* Choose **Error Correction Level**. QR Code contains redundant data allowing scanners to read the QR Code even if a part is missing or dirty.
 
 Default correction level is set to 1 (Low) (allow 7% correction capability)
 
