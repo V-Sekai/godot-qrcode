@@ -27,7 +27,7 @@ Installation
 
 As this project is an addon module for GodotEngine, your need to [recompile the engine from sources](https://docs.godotengine.org/en/stable/development/compiling/index.html) to use it.
 
-* Clone this repository in your Godot sources **modules** folder or create a **QRCodeTexture2D** folder in your **modules** folder and copy the files manually.
+* Clone this repository in your Godot sources **modules** folder or create a **qrcode** folder in your **modules** folder and copy the files manually.
 * Recompile the engine
 
 Usage
@@ -38,7 +38,7 @@ QRCodeTexture can be used as any other textures in the engine.
 Most common usage : Display a QRCode in a UI using a TextureRect node.
 
 * Create a TextureRect node.
-* From the inspector, check the **Expand** checkbox and select **Keep Aspect** for **Strech Mode** to prevent deformation when resizing the QR Code.
+* From the inspector, check the **Expand** checkbox and select **Keep Aspect** for **Stretch Mode** to prevent deformation when resizing the QR Code.
 * Add a new **QRCodeTexture2D** in the **texture** slot.
 
 ![image](https://user-images.githubusercontent.com/3649998/129286912-ba39c662-4258-4982-a334-beebfb0aecf5.png)
