@@ -1,13 +1,13 @@
-QRCodeTexture module for GodotEngine 3.x
+QRCodeTexture3D module for GodotEngine 4.x
 ========================================
 
 ![image](https://user-images.githubusercontent.com/3649998/129288546-55b03061-2dd1-4555-9b6b-9409c503355f.png)
 
-
 Introduction
 ------------
 
-A new texture type is added to GodotEngine by this module : QRCodeTexture.
+A new texture type is added to GodotEngine by this module : QRCodeTexture3D.
+
 This new texture is a QR Code generated from a given content String.
 
 This module uses [Nayuki's QR Code generator library](https://www.nayuki.io/page/qr-code-generator-library) under MIT Licence.
@@ -20,18 +20,14 @@ Features
 * 4 error correction levels (QR Code Model 2 standard)
 * Customizable border thickness
 
-
-
 https://user-images.githubusercontent.com/3649998/129322688-2f935abb-aa07-446d-895a-25694b15921e.mp4
-
-
 
 Installation
 ------------
 
 As this project is an addon module for GodotEngine, your need to [recompile the engine from sources](https://docs.godotengine.org/en/stable/development/compiling/index.html) to use it.
 
-* Clone this repository in your Godot sources **modules** folder or create a **QRCodeTexture** folder in your **modules** folder and copy the files manually.
+* Clone this repository in your Godot sources **modules** folder or create a **QRCodeTexture3D** folder in your **modules** folder and copy the files manually.
 * Recompile the engine
 
 Usage
@@ -43,7 +39,7 @@ Most common usage : Display a QRCode in a UI using a TextureRect node.
 
 * Create a TextureRect node.
 * From the inspector, check the **Expand** checkbox and select **Keep Aspect** for **Strech Mode** to prevent deformation when resizing the QR Code.
-* Add a new **QRCodeTexture** in the **texture** slot.
+* Add a new **QRCodeTexture3D** in the **texture** slot.
 
 ![image](https://user-images.githubusercontent.com/3649998/129286912-ba39c662-4258-4982-a334-beebfb0aecf5.png)
 
