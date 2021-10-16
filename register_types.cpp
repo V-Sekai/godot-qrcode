@@ -10,5 +10,4 @@ void register_qrcode_types() {
 }
 
 void unregister_qrcode_types() {
-	// Nothing to do here in this example.
 }

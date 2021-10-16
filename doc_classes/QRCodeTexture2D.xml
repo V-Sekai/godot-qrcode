@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<class name="QRCodeTexture2D" inherits="ImageTexture" version="4.0">
+	<brief_description>
+	</brief_description>
+	<description>
+	</description>
+	<tutorials>
+	</tutorials>
+	<members>
+		<member name="border" type="int" setter="set_border" getter="get_border" default="1">
+		</member>
+		<member name="color" type="Color" setter="set_color" getter="get_color" default="Color(0, 0, 0, 1)">
+		</member>
+		<member name="content" type="String" setter="set_content" getter="get_content" default="&quot;&quot;">
+		</member>
+		<member name="error_correction_level" type="int" setter="set_ecl" getter="get_ecl" default="1">
+		</member>
+	</members>
+</class>
