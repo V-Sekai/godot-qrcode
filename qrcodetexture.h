@@ -21,10 +21,9 @@ protected:
 	Vector2i size;
 
 public:
-
 	// Error correction level : from 1 = lowest to 4 = highest
 	int error_correction_level = 1;
-	Ref<Image> GetImage(String p_string, const int p_border=1, Color p_color = Color(0,0,0));
+	Ref<Image> GetImage(String p_string, const int p_border = 1, Color p_color = Color(0, 0, 0));
 	void set_content(const String &p_string);
 	String get_content() const;
 	void set_border(const int &p_border);
